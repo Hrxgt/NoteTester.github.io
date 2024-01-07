@@ -21,6 +21,13 @@ function nextQuestion() {
     }
 }
 
+function prevQuestion() {
+    if (questionCount > 0) {
+        questionCount--;
+        updateQuestion();
+    }
+}
+
 function answerQuestion(optionNum) {
     userAnswers[questionCount] = optionNum;
 }
@@ -52,6 +59,9 @@ for (let i = 0; i < 4; i++) {
 
 let next_btn = document.getElementById('next_btn');
 next_btn.addEventListener('click', nextQuestion);
+
+let prev_btn = document.getElementById('prev_btn');
+prev_btn.addEventListener('click', prevQuestion);
 
 let submit_btn = document.getElementById('submit_btn');
 submit_btn.addEventListener('click', submitAnswers);
