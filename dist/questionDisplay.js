@@ -3,14 +3,11 @@
 
 function updateQuestion() {
     // Display the first question
-
-    questionText[0].textContent = questions[questionCount].question;  // Blurred bg
-    questionText[1].textContent = questions[questionCount].question;  // Foreground
+    questionText.textContent = (questionCount+1) + '. ' + questions[questionCount].question;
 
     // Display the options
     for (let i = 0; i < 4; i++) {
-        options[i].querySelector('.text-sm').textContent = questions[questionCount].options[i];
-
+        options[i].querySelector('div.w-full').textContent = questions[questionCount].options[i];
     }    
 }
 
@@ -30,28 +27,51 @@ function prevQuestion() {
 
 function answerQuestion(optionNum) {
     userAnswers[questionCount] = optionNum;
+    console.log(userAnswers);
 }
 
 function submitAnswers() {
+    score = 0
+    wrongAnswers = []
     for (let i = 0; i < max; i++) {
         if (userAnswers[i] == questions[i].correct_answer) {
             score++;
+        } else if (userAnswers[i] != -1) {
+            wrongAnswers.push(i);
         }
+
     }
-    console.log(`Score is ${score}`);
+    showScore();
+}
+
+function showScore() {
+    document.querySelector('.score').textContent = score;
+    document.querySelector('.total_questions').textContent = max;
+    let wrong = document.querySelector('.wrong-answers');
+    wrong.innerHTML = '';
+    for (let i = 0; i < wrongAnswers.length; i++) {
+        let q = wrongAnswers[i];
+        let corr = questions[q].correct_answer;
+        let p = document.createElement('p')
+        p.style.color = 'red';
+        p.textContent = `Question ${q+1}: The correct answer was '${questions[q].options[corr]}'`
+        wrong.appendChild(p);
+    }
 }
 
 
 let questions = JSON.parse(sessionStorage.getItem('questions'));
-let max = questions.length - 1;
+let max = questions.length;
 let questionCount = 0;
 let userAnswers = []
-let score = 0;
+let wrongAnswers = []
 for (let i = 0; i < questions.length; i++) {
     userAnswers.push(-1);
 }
+let score = 0;
 
-let questionText = document.getElementsByClassName('question');
+
+let questionText = document.querySelector('.mb-5');
 let options = document.getElementsByClassName('fgoption');
 for (let i = 0; i < 4; i++) {
     options[i].addEventListener('click', () => answerQuestion(i))
