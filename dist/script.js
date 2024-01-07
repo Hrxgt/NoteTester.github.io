@@ -6,4 +6,5 @@ hamburger.addEventListener('click',()=>{
 cross.addEventListener('click',()=>{
     console.log('clicked')
     document.querySelector('.mnav').style.opacity='0'
+    document.querySelector('.welcome').style.opacity='1'
 })
