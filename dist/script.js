@@ -1,4 +1,3 @@
-// let hamburger = document.getElementsByClassName('.navbar-default')
 hamburger.addEventListener('click',()=>{
     console.log('clicked')
     document.querySelector('.mnav').style.opacity='1'
