@@ -27,47 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    var dropzone = document.getElementById('file_input1');
-    var fileInput = document.getElementById('dropzone-file');
-    var uploadButton = document.getElementById('upload_btn');
-
-    dropzone.addEventListener('dragover', function (e) {
-        e.preventDefault();
-        dropzone.classList.add('bg-gray-100');
-    });
-
-    dropzone.addEventListener('dragleave', function () {
-        dropzone.classList.remove('bg-gray-100');
-    });
-
-    dropzone.addEventListener('drop', function (e) {
-        e.preventDefault();
-        dropzone.classList.remove('bg-gray-100');
-
-        var files = e.dataTransfer.files;
-        handleFiles(files);
-    });
-
-    fileInput.addEventListener('change', function () {
-        var files = fileInput.files;
-        handleFiles(files);
-    });
-
-    uploadButton.addEventListener('click', function () {
-        // file input click event when the upload button is clicked
-        fileInput.click();
-    });
-   // Prevent default behavior for the document's dragover 
-    document.addEventListener('dragover', function (e) {
-        e.preventDefault();
-    });
-
-    document.addEventListener('drop', function (e) {
-        e.preventDefault();
-    });
-});
-
 
 
 
