@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-[#0f172a] font-fira-code" >
+
+    <div class="text-white flex justify-center text-3xl font-bold m-2 mt-6 p-3 ">
+        Quizmania: Where Every Question is an Adventure!
+    </div>
+    <div class="text-white flex justify-center text-sm font-thin m-2 mt-6 p-6">
+       "Get ready for a rollercoaster of questions, twists, and turns. Quizmania is about to begin – buckle up!"
+    </div>
+    
+ 
+    <div class="conatiner  mt-8 m-4">
+
+        <div class="box border-8 rounded-2xl bg-slate-800 blur-sm -z-10  p-6 border-yellow-500 bo text-white text-xl font-bold animate-fade-up duration-1000">
+           <span class="question">What is the capital of Switzerland?</span>
+            <div class="mcq mt-24">
+                <ul class="w-full gap-6 md:grid-cols-4 flex flex-col">
+                    <!-- First option -->
+                    <li class="option1 hover:animate-pulse">
+                        <input type="radio" id="mcq1" name="questionType" value="mcq" class="hidden peer" required="">
+                        <label for="mcq1" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full text-sm">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                        </label>
+                    </li>
+        
+                    <!-- Second option -->
+                    <li class="option2 hover:animate-pulse">
+                        <input type="radio" id="longAnswer" name="questionType" value="longAnswer" class="hidden peer">
+                        <label for="longAnswer" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block"></div>
+                            <div class="w-full text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fugit?</div>
+                        </label>
+                    </li>
+        
+                    <!-- Third option -->
+                    <li class="option3 hover:animate-pulse">
+                        <input type="radio" id="mcq2" name="questionType" value="mcq" class="hidden peer" required="">
+                        <label for="mcq2" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ex nam quibusdam dignissimos inventore esse!</div>
+                            </div>
+                        </label>
+                    </li>
+        
+                    <!-- Fourth option -->
+                    <li class="option4 hover:animate-pulse">
+                        <input type="radio" id="mcq3" name="questionType" value="mcq" class="hidden peer" required="">
+                        <label for="mcq3" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full text-sm">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>            
+            </div>           
+        </div>
+    
+        
+     </div>
+     <div class="conatiner p-5 mt-8">
+
+        <div class=" absolute md:top-[245px] top-[320px] right-[0.75px] box border-4 rounded-2xl bg-slate-800  m-5 p-8 border-yellow-500 bo text-white text-xl font-bold animate-fade-up duration-1000">
+           <span class="question">What is the capital of Switzerland?</span>
+            <div class="mcq mt-8">
+                <ul class="w-full gap-6 md:grid-cols-4 flex flex-col">
+                    <!-- First option -->
+                    <li class="option1 hover:animate-pulse hover:border-2 rounded-lg border-red-700">
+                        <input type="radio" id="mcq1" name="questionType" value="mcq" class="hidden peer" required="">
+                        <label for="mcq1" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full text-sm">Bern</div>
+                            </div>
+                        </label>
+                    </li>
+        
+                    <!-- Second option -->
+                    <li class="option2 hover:animate-pulse hover:border-2 rounded-lg border-red-700">
+                        <input type="radio" id="longAnswer" name="questionType" value="longAnswer" class="hidden peer">
+                        <label for="longAnswer" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block"></div>
+                            <div class="w-full text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fugit?</div>
+                        </label>
+                    </li>
+        
+                    <!-- Third option -->
+                    <li class="option3 hover:animate-pulse hover:border-2 rounded-lg border-red-700">
+                        <input type="radio" id="mcq2" name="questionType" value="mcq" class="hidden peer" required="">
+                        <label for="mcq2" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full text-sm">Zurich</div>
+                            </div>
+                        </label>
+                    </li>
+        
+                    <!-- Fourth option -->
+                    <li class="option4 hover:animate-pulse hover:border-2 rounded-lg border-red-700">
+                        <input type="radio" id="mcq3" name="questionType" value="mcq" class="hidden peer" required="">
+                        <label for="mcq3" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full text-sm">Geneva</div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>            
+            </div>           
+        </div>
+
+        <div class="control flex justify-center mr-28 -mt-5 md:mr-0 md:mt-0">
+            <button type="button" class="inline-flex items-center mt-6 md:ml-24 ml-[110px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 ">
+                Submit
+                <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800  bg-blue-200  rounded-full">
+                <img class="rounded-full " src="assets/send.png" alt="">
+                </span>
+           </button>
+           <button type="button" class="inline-flex items-center mt-6 md:ml-24 ml-[110px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 animate-rotate-y">
+            Next
+            <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800  bg-blue-200  rounded-full">
+            <img class="rounded-full " src="assets/send.png" alt="">
+            </span>
+          </button>
+
+        </div>
+        
+        
+        
+     </div>
+
+     
+    
+    
+</body>
+</html>
