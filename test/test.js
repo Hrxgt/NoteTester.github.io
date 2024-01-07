@@ -4,7 +4,8 @@ let setup = `Generate ten multiple choice questions on a given text in JSON form
     "question": "What is the capital of France?",
     "options": ["Berlin", "Paris", "Madrid", "Rome"],
     "correct_answer": "1"
-  }]`
+}]
+The options list is 0-indexed, so correct_answer should be in the range 0 to 3.`
 
 let data = null;
 
@@ -41,6 +42,7 @@ async function getResponse(prompt) {
     );
     let full_response = await response.json(); // Extracting data as a JSON Object from the response
     console.log("Response received.")
+    console.log(full_response);
     data = full_response.choices[0].message.content;
 }
 
