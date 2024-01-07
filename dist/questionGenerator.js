@@ -68,8 +68,9 @@ let setup = `Generate ten multiple choice questions on a given text in JSON form
 [{
     "question": "What is the capital of France?",
     "options": ["Berlin", "Paris", "Madrid", "Rome"],
-    "correct_answer": "1"
-  }]`
+    "correct_answer": 1
+  }]
+The options list is 0-indexed, so correct answer should be in the range 0 to 3.`
 
 let data = null;
 let notes = null;
@@ -81,7 +82,7 @@ upload_btn.addEventListener('click', getNotes)
 
 let generate_btn = document.getElementById('generate_btn');
 generate_btn.addEventListener('click', () => {
-
+    getResponse(notes);
     console.log("clicked");
     document.querySelector('.loader').style.opacity = '1';
     document.querySelector('.generate').style.opacity = '0';
