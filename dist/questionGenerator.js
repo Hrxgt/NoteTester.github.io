@@ -61,7 +61,12 @@ function getNotes(event) {
     reader.readAsText(fileInput.files[0]);
 }
 // ------------
-
+function confirmAllParams() {
+    let fileInput = document.getElementById('file_input');
+    let numOfQuestions = document.getElementById('success').value
+    if (fileInput.files.length == 0 || numOfQuestions == '' ) {return false;}
+    return true;
+}
 
 // Set up ChatGPT to take notes or an article as input and generate questions.
 let setup = `Generate ten multiple choice questions on a given text in JSON format. Here is an example:
@@ -82,6 +87,10 @@ upload_btn.addEventListener('click', getNotes)
 
 let generate_btn = document.getElementById('generate_btn');
 generate_btn.addEventListener('click', () => {
+    if (!confirmAllParams()) {
+        alert("Some fields are missing");
+        return;
+    };
     getResponse(notes);
     console.log("clicked");
     document.querySelector('.loader').style.opacity = '1';
