@@ -34,8 +34,9 @@ async function getResponse(prompt) {
     );
     let full_response = await response.json(); // Extracting data as a JSON Object from the response
     console.log("Response received.")
-    data = JSON.parse(full_response.choices[0].message.content);
-    console.log(data);
+    data = full_response.choices[0].message.content;
+    sessionStorage.setItem('questions', data);
+    location.href = 'question.html';
 }
 
 async function getKey() {
@@ -79,6 +80,12 @@ let upload_btn = document.getElementById('upload_btn');
 upload_btn.addEventListener('click', getNotes)
 
 let generate_btn = document.getElementById('generate_btn');
-generate_btn.addEventListener('click', () => getResponse(notes));
+generate_btn.addEventListener('click', () => {
+    getResponse(notes);
+    console.log("clicked");
+    document.querySelector('.loader').style.opacity = '1';
+    document.querySelector('.generate').style.opacity = '0';
+});
+
 // Notes generation
 
