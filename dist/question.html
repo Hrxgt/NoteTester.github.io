@@ -8,147 +8,117 @@
 </head>
 <body class="bg-[#0f172a] font-fira-code" >
 
-    <div class="text-white flex justify-center text-3xl font-bold m-2 mt-6 p-3 ">
+    <div class="text-yellow-600 flex justify-center text-3xl font-bold m-2 mt-6 p-3 ">
         Quizmania: Where Every Question is an Adventure!
     </div>
-    <div class="text-white flex justify-center text-sm font-thin m-2 mt-6 p-6">
+    <div class="text-white flex justify-between text-sm font-thin m-2 mt-6 p-6">
        "Get ready for a rollercoaster of questions, twists, and turns. Quizmania is about to begin – buckle up!"
     </div>
     
  
-    <div class="conatiner mt-8 m-4 overflow-x-hidden ">
+    <div class="conatiner1 mt-32 m-4 w-[40vw] rounded-lg bg-slate-800 p-3">
 
-        <div class="box border-8 rounded-2xl md:w-[90vw] overflow-x-hidden bg-slate-800 md:blur-md blur-xl -z-10  p-6 border-yellow-500 bo text-white text-xl font-bold animate-fade-up duration-1000">
-           <span class="question">What is the capital of Switzerland?</span>
-            <div class="mcq mt-24">
-                <ul class="w-full gap-6 md:grid-cols-4 flex flex-col">
-                    <!-- First option -->
-                    <li class="option1 h">
-                        <div for="mcq1" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg  dark:border-gray-700  h dark:peer-checked:text-gray-300 peer-checked:text-gray-600 dark:text-gray-400 dark:bg-gray-800">
-                            <div class="block">
-                                <div class="w-full text-sm">Lorem ipsum dolor sit amet consectetur.</div>
-                            </div>
-                        </div>
-                    </li>
-        
-                    <!-- Second option -->
-                    <li class="option2 ">
-                        
-                        <div for="longAnswer" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg   dark:border-gray-700  dark:peer-checked:text-gray-300 peer-checked:text-gray-600  dark:text-gray-400 dark:bg-gray-800">
-                            <div class="block"></div>
-                            <div class="w-full text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fugit?</div>
-                        </div>
-                    </li>
-        
-                    <!-- Third option -->
-                    <li class="option3 ">
-                       
-                        <div for="mcq2" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg c dark:border-gray-700   dark:peer-checked:text-gray-300 peer-checked:text-gray-600  dark:text-gray-400 dark:bg-gray-800 ">
-                            <div class="block">
-                                <div class="w-full text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ex nam quibusdam dignissimos inventore esse!</div>
-                            </div>
-                        </div>
-                    </li>
-        
-                    <!-- Fourth option -->
-                    <li class="option4 ">
-                       
-                        <div for="mcq3" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg   dark:border-gray-700   dark:peer-checked:text-gray-300 peer-checked:text-gray-600  dark:text-gray-400 dark:bg-gray-800 ">
-                            <div class="block">
-                                <div class="w-full text-sm">Lorem ipsum dolor sit amet.</div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>            
-            </div>           
+        <div class="left flex justify-between rounded-xl bg-[#0f172a] p-4 space-x-9 m-3">
+            <div class="correct text-white font-bold text-xl">Correct
+                <div class="score mt-7"></div>
+            </div>
+            <div class="total text-white font-bold text-xl">Total Questions
+                <div class="total_questions mt-7"></div>
+            </div>
         </div>
+
+       
     
         
      </div>
-     <div class="conatiner p-5 mt-8 w-[100vw] overflow-x-hidden">
+     <div class="conatiner2 p-5 mt-48 w-[60vw] bg">
+        <div class="absolute top-[300px] left-[750px] question">
+        <h3 class="mb-5 text-3xl  text-gray-900 dark:text-indigo-500 font-bold">How much do you expect to use each month?</h3>
+            <ul class="grid w-full gap-6 md:grid-cols-2 mt-20 space-y-6">
+                <ul class="space-y-5">
+                    <!-- Option 1 -->
+                    <li>
+                        <input type="radio" id="hosting-small" name="hosting" value="hosting-small" class="hidden peer" required>
+                        <label for="hosting-small" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full">Lorem, ipsum.</div>
+                            </div>
+                            <svg class="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </label>
+                    </li>
+            
+                    <!-- Option 2 -->
+                    <li>
+                        <input type="radio" id="hosting-big" name="hosting" value="hosting-big" class="hidden peer">
+                        <label for="hosting-big" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full">Lorem, ipsum dolor.</div>
+                            </div>
+                            <svg class="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </label>
+                    </li>
+            
+                    <!-- Option 3 -->
+                    <li>
+                        <input type="radio" id="hosting-medium" name="hosting" value="hosting-medium" class="hidden peer">
+                        <label for="hosting-medium" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full">Lorem, ipsum medium.</div>
+                            </div>
+                            <svg class="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </label>
+                    </li>
+            
+                    <!-- Option 4 -->
+                    <li>
+                        <input type="radio" id="hosting-large" name="hosting" value="hosting-large" class="hidden peer">
+                        <label for="hosting-large" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full">Lorem, ipsum large.</div>
+                            </div>
+                            <svg class="w-5 h-5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </label>
+                    </li>
+                </ul>
+             
+            </ul>
+        </div>
+        
 
-        <div class=" absolute flex space-x-14 md:top-[245px] top-[280px] right-[0.75px] box border-4 rounded-2xl bg-slate-800  m-5 p-8 border-yellow-500 bo text-white text-xl font-bold animate-fade-up duration-1000 w-[90vw]">
-           <div class="question items-center flex wrap">What is the capital of Switzerland?</div>
-            <div class="mcq mt-8">
-                <ul class="w-full gap-6 md:grid-cols-4 flex flex-col">
-                    <!-- First option -->
-                    <li class="option4  hover:border-2 rounded-lg border-red-700 fgoption">
-                        <input type="radio" id="mcq3" name="questionType" value="mcq" class="hidden peer" required="">
-                        <label for="mcq3" class="flex flex-wrap items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
-                            <div class="block">
-                                <div class="w-full text-sm">Bern</div>
-                            </div>
-                        </label>
-                    </li>
-        
-                    <!-- Second option -->
-                    <li class="option2  hover:border-2 rounded-lg border-red-700 fgoption">
-                        <input type="radio" id="longAnswer" name="questionType" value="longAnswer" class="hidden peer">
-                        <label for="longAnswer" class="flex flex-wrap items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
-                            <div class="block"></div>
-                            <div class="w-full text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, fugit?</div>
-                        </label>
-                    </li>
-        
-                    <!-- Third option -->
-                    <li class="option3  hover:border-2 rounded-lg border-red-700 fgoption">
-                        <input type="radio" id="mcq2" name="questionType" value="mcq" class="hidden peer" required="">
-                        <label for="mcq2" class="flex flex-wrap items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
-                            <div class="block">
-                                <div class="w-full text-sm">Zurich</div>
-                            </div>
-                        </label>
-                    </li>
-        
-                    <!-- Fourth option -->
-                    <li class="option4  hover:border-2 rounded-lg border-red-700 fgoption">
-                        <input type="radio" id="mcq3" name="questionType" value="mcq" class="hidden peer" required="">
-                        <label for="mcq3" class="flex flex-wrap items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
-                            <div class="block">
-                                <div class="w-full text-sm">Geneva</div>
-                            </div>
-                        </label>
-                    </li>
-                </ul>            
-            </div>           
+              
+     </div>           
         </div>
 
-        <div class="control flex justify-center mr-28 -mt-5 md:mr-0 md:mt-0">
-            <button type="button" class="inline-flex items-center mt-6 md:ml-24 ml-[110px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 " id="prev_btn">
+        <div class="absolute -bottom-20 right-[500px] control flex justify-center mr-28 -mt-5 md:mr-0 md:mt-0">
+            <button type="button" class="inline-flex items-center  md:ml-24 ml-[110px] px-5 py-4 text-lg w-40 h-16 font-bold text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 " id="prev_btn">
                 Previous
                 <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800  bg-blue-200  rounded-full">
                 <img class="rounded-full " src="assets/send.png" alt="">
                 </span>
            </button>
-           <button type="button" class="inline-flex w-[133.43px] items-center mt-6 md:ml-24 ml-[200px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 animate-rotate-y" id="next_btn">
+           <button type="button" class="inline-flex w-40 items-center  md:ml-24 ml-[200px]  h-16 px-5 py-4 text-lg font-bold text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 animate-rotate-y" id="next_btn">
             Next
             <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800  bg-blue-200  rounded-full">
             <img class="rounded-full " src="assets/send.png" alt="">
             </span>
         </button>
         </div>
-        <button type="button" class="inline-flex md:ml-[1280px] mt-6  ml-[155px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 " id="submit_btn">
+        <button type="button" class="inline-flex  -mt-10 ml-8  px-5 py-4  w-32 h-16 text-lg text-center text-white font-bold  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 " id="submit_btn">
             Submit
             <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800  bg-blue-200  rounded-full">
             <img class="rounded-full " src="assets/send.png" alt="">
             </span>
        </button>
         
-       <div class="final opacity-0">
-        <div class="result rounded-md border-2 p-3 border-white h-32  mt-10 bg-black blur-lg opacity-80">
-        </div>
-        <div class=" absolute right-[20px] md:left-10  -bottom-[255px] md:w-[90vw] result border-4 rounded-md shadow-lg p-3 border-white h-28  mt-10 ml-10">
-         <div class="box flex justify-center md:space-x-52 space-x-20">
-             <div class="correct text-white text-lg font-bold">Correct                  
-                  <div class="score"></div>
-             </div>
-         <div class="total text-white text-lg font-bold
-         ">Total Questions
-             <div class="tscore"></div>
-         </div>
-         </div>
-         </div>
-       </div>
+       
       
         
         
