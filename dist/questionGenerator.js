@@ -81,7 +81,7 @@ upload_btn.addEventListener('click', getNotes)
 
 let generate_btn = document.getElementById('generate_btn');
 generate_btn.addEventListener('click', () => {
-    getResponse(notes);
+
     console.log("clicked");
     document.querySelector('.loader').style.opacity = '1';
     document.querySelector('.generate').style.opacity = '0';
