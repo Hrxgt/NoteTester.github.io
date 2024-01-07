@@ -68,7 +68,7 @@
      </div>
      <div class="conatiner p-5 mt-8">
 
-        <div class=" absolute md:top-[245px] top-[320px] right-[0.75px] box border-4 rounded-2xl bg-slate-800  m-5 p-8 border-yellow-500 bo text-white text-xl font-bold animate-fade-up duration-1000">
+        <div class=" absolute md:top-[245px] top-[380px] right-[0.75px] box border-4 rounded-2xl bg-slate-800  m-5 p-8 border-yellow-500 bo text-white text-xl font-bold animate-fade-up duration-1000">
            <span class="question">What is the capital of Switzerland?</span>
             <div class="mcq mt-8">
                 <ul class="w-full gap-6 md:grid-cols-4 flex flex-col">
@@ -115,25 +115,39 @@
         </div>
 
         <div class="control flex justify-center mr-28 -mt-5 md:mr-0 md:mt-0">
-            <button type="button" class="inline-flex items-center mt-6 md:ml-24 ml-[110px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 " id="submit_btn">
+            <button type="button" class="inline-flex items-center mt-6 md:ml-24 ml-[110px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 animate-rotate-y " id="Previous_btn">
                 Previous
                 <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800  bg-blue-200  rounded-full">
                 <img class="rounded-full " src="assets/send.png" alt="">
                 </span>
            </button>
-           <button type="button" class="inline-flex items-center mt-6 md:ml-24 ml-[110px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 animate-rotate-y" id="next_btn">
+           <button type="button" class="inline-flex w-[133.43px] items-center mt-6 md:ml-24 ml-[200px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 animate-rotate-y" id="next_btn">
             Next
             <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800  bg-blue-200  rounded-full">
             <img class="rounded-full " src="assets/send.png" alt="">
             </span>
         </button>
         </div>
-        <button type="button" class="inline-flex items-center mt-6 md:ml-[465px] ml-[155px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 " id="submit_btn">
+        <button type="button" class="inline-flex md:ml-[1280px] mt-6  ml-[155px] px-5 py-2.5 text-sm font-medium text-center text-white  rounded-lg hover:animate-wiggle border border-cyan-800 hover:bg-indigo-500 " id="submit_btn">
             Submit
             <span class="inline-flex items-center justify-center w-4 h-4 ms-2 text-xs font-semibold text-blue-800  bg-blue-200  rounded-full">
             <img class="rounded-full " src="assets/send.png" alt="">
             </span>
        </button>
+
+       <div class="result border-2 p-3 border-cyan-800 h-32  mt-10">
+            <div class="box flex justify-center md:space-x-52 space-x-20">
+                <div class="correct text-green-700 text-lg font-bold">Correct                    <div class="score"></div>
+                </div>
+            <div class="total text-white text-lg font-bold
+            ">Total Questions
+                <div class="tscore"></div>
+            </div>
+            </div>
+        
+
+
+       </div>
         
         
         
