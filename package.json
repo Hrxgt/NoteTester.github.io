@@ -1,0 +1,21 @@
+{
+  "name": "notetester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production npx tailwind -o ./dist/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animatecss": "^3.0.5"
+  },
+  "dependencies": {
+    "tailwindcss-animated": "^1.0.1"
+  }
+}
