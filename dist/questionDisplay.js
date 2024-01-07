@@ -39,17 +39,25 @@ function submitAnswers() {
         }
     }
     console.log(`Score is ${score}`);
+    showScore();
+}
+
+function showScore() {
+    document.querySelector('.final').style.opacity = 1;
+    document.querySelector('.score').textContent = score;
+    document.querySelector('.tscore').textContent = max;
 }
 
 
 let questions = JSON.parse(sessionStorage.getItem('questions'));
-let max = questions.length - 1;
+let max = questions.length;
 let questionCount = 0;
 let userAnswers = []
-let score = 0;
 for (let i = 0; i < questions.length; i++) {
     userAnswers.push(-1);
 }
+let score = 0;
+
 
 let questionText = document.getElementsByClassName('question');
 let options = document.getElementsByClassName('fgoption');
