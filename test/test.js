@@ -1,5 +1,5 @@
 // Simple getting something on the console
-let setup = `Generate ten multiple choice questions on a give text in JSON format. Here is an example:
+let setup = `Generate ten multiple choice questions on a given text in JSON format. Here is an example:
 [{
     "question": "What is the capital of France?",
     "options": ["Berlin", "Paris", "Madrid", "Rome"],
